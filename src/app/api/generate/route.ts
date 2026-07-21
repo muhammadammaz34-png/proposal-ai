@@ -4,14 +4,14 @@ import { proposalPrompt } from "@/prompts/proposal";
 
 export async function POST(req: Request) {
   try {
-    const { job } = await req.json();
+    const { job, style } = await req.json();
 
     const completion = await openrouter.chat.completions.create({
       model: "openai/gpt-oss-20b:free",
       messages: [
         {
           role: "user",
-          content: proposalPrompt(job),
+          content: proposalPrompt(job, style),
         },
       ],
     });

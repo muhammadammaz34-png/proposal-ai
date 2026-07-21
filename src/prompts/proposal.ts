@@ -107,6 +107,9 @@ Never sound pushy.
 
 ----------------------------------------
 
+Style:
+${style}
+
 Rules:
 
 - Sound like a real person.
@@ -125,13 +128,7 @@ Rules:
 - Never sound like a template.
 - Write as if this proposal was written specifically for this client.
 
-Job Description:
+Client Job Description:
 
 ${job}
-
-Write the proposal in this tone:
-
-${style}
-
-Follow this tone throughout the entire proposal while keeping it natural.
 `;
